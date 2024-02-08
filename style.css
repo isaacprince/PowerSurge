@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  background-color: #fff;
+  font-family: "Epilogue", sans-serif;
+}
+p {
+  text-align: center;
+  color: white;
+  font-family: "Epilogue", sans-serif;
+
+}
+/* h1 {
+  text-align: center;
+  font-family: "Epilogue", sans-serif;
+  color: #111;
+}
+h5 {
+  font-family: "Epilogue", sans-serif;
+  color: #fff;
+  padding-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+div {
+  display: flex;
+  justify-content: center;
+}
+b {
+  color: rgb(230, 224, 36);
+} */
+
+/* Styling the Navbar */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* z-index: 100; */
+}
+
+.logo1 {
+  font-size: 3opx;
+  color: Black;
+  padding-left: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo2 {
+  font-size: 3opx;
+  color: Black;
+  padding-left: 3px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: #797979;
+  font-weight: 300;
+  text-decoration: none;
+  margin-left: 40px;
+}
+.navbar a:hover {
+  color: #2400ff;
+  font-weight: 500;
+}
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #2400ff;
+  transition: 0.3s ease;
+}
+.navbar a:hover:before {
+  width: 100%;
+}
+
+/* .grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-item {
+  width: 100%;
+  text-align: center;
+}
+
+.aboutpic {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-item.one,
+.grid-item.two,
+.grid-item.three {
+  text-align: left;
+} */
+
+#hero1{
+  color: #1c1c1c;
+  text-align: left;
+}
+#hero2{
+  color: #2400ff;
+}
