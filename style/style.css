@@ -37,7 +37,7 @@ p {
   align-items: center;
   /* z-index: 100; */
 }
-
+/* 
 .logo1 {
   font-size: 3opx;
   color: Black;
@@ -53,7 +53,7 @@ p {
   text-decoration: none;
   font-weight: 700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 .navbar a {
   position: relative;
   font-size: 18px;
@@ -94,7 +94,7 @@ a {
   position: relative;
   font-size: 16px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0px;
   text-decoration: none;
   color: #797979;
   padding-right: 10px;
@@ -309,3 +309,284 @@ h3 {
   cursor: pointer;
   background-color: #111;
 }
+
+/* Blog styling -------*/
+#blog {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* .blog-heading span{
+  color: red;
+}
+
+.blog-heading  */
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+}
+
+.blog-box {
+  width: 350px;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  margin: 20px;
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+}
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-text {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.blog-text span {
+  /* color: blue;
+  font-size: 0.9rem; */
+  padding-top: 35px;
+  padding-bottom: 10px;
+  width: 86px;
+  height: 14px;
+  flex-grow: 0;
+  font-family: Epilogue;
+  font-size: 12.9px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.05;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--grey-500);
+}
+
+.blog-text .blog-title {
+  /* font-size: 1.3rem;
+  font-weight: 500;
+  color: blue; */
+  width: 338px;
+  height: 27px;
+  flex-grow: 0;
+  font-family: Epilogue;
+  font-size: 25.9px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.05;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(60, 14, 246, 0.9);
+}
+.blog-text .blog-title ::hover {
+  color: red;
+  transition: all ease 0.3s;
+}
+
+.blog-text p {
+  color: #9b9b9b;
+  text-align: left;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
+.blog-text a {
+  color: #0f0f0f;
+  text-align: left;
+}
+
+.blog-text a:hover {
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+
+@media (max-width: 1250px) {
+  .blog-box {
+    width: 300px;
+  }
+}
+@media (max-width: 1100px) {
+  .blog-box {
+    width: 70%;
+  }
+}
+@media (max-width: 550px) {
+  .blog-box {
+    margin: 20px 10px;
+    width: 100%;
+    #blog {
+      padding: 20px;
+    }
+  }
+}
+
+/* Product page */
+.product-slider {
+  position: relative;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(253, 253, 253);
+}
+
+.slider-box {
+  margin: 20px;
+  height: 350px;
+  width: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid rgb(245, 244, 244);
+}
+
+.slider-box a {
+  text-decoration: none;
+  text-align: center;
+}
+#detail-box {
+  display: flex;
+  align-items: left;
+}
+.img-box {
+  height: 170px;
+}
+.img-box img {
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+#cancel {
+  text-decoration: line-through;
+  color: #bbbbbb;
+}
+/* .time {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  color: #f16007;
+} */
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 35px;
+  color: #111;
+}
+.price {
+  padding-bottom: 10px;
+  color: #111;
+  /* background-color: #ff555b; */
+  line-height: 20px;
+}
+.cart {
+  position: absolute;
+  bottom: 0px;
+  height: 45px;
+  background-color: #111;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cart a {
+  color: #fff;
+}
+.slider-box:hover {
+  box-shadow: 2px 2px 12px rgba(47, 47, 47, 0.4);
+}
+.slider-box:hover .img-box img {
+  transform: scale(1.07);
+  transition: all ease 0.3s;
+}
+.cart:hover {
+  transform: scale(1.1);
+  background-color: blue;
+  box-shadow: 2px 2px 12px rgba(47, 47, 47, 0.4);
+  transition: all ease 0.1s;
+}
+
+#red {
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+/* landing page card styling  */
+/* .card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 18px;
+  color: green;
+  margin-bottom: 8px;
+}
+
+.slash-price {
+  font-size: 16px;
+  color: #999;
+  text-decoration: line-through;
+  margin-right: 8px;
+}
+
+.discount {
+  font-size: 14px;
+  color: red;
+}
+
+.order-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+} */
