@@ -658,6 +658,7 @@ img-hero {
 
 .input-group {
   position: relative;
+  justify-content: center;
 }
 .input-group .label-title {
   color: #38475a;
@@ -698,7 +699,7 @@ img-hero {
 }
 
 .submit-btn {
-  width: 100%;
+  /* width: 100%;
   background-color: #2400ff;
   border: 1px solid transparent;
   font-size: 16px;
@@ -707,14 +708,28 @@ img-hero {
   font-weight: 500;
   text-align: center;
   text-transform: capitalize;
+  cursor: pointer; */
+
+  display: flex;
+  width: 30%;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  justify-content: center;
+  padding: 28px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
   cursor: pointer;
+  background-color: #111;
 }
 
-.submit-btn:hover{
-  opacity: .95;
+.submit-btn:hover {
+  opacity: 0.95;
 }
 
-.about-container1{
+.about-container1 {
   width: 612px;
   height: 452px;
   margin: 41px 16px 56px 0;
@@ -722,12 +737,12 @@ img-hero {
   border-radius: 8px;
   background-color: #141414;
 }
-.about-img{
+.about-img {
   width: 46px;
-  height:46px;
+  height: 46px;
 }
 
-.about-text{
+.about-text {
   width: 556px;
   height: 160px;
   flex-grow: 0;
@@ -741,7 +756,7 @@ img-hero {
   text-align: left;
   color: #fff;
 }
-.about-container2{
+.about-container2 {
   width: 612px;
   height: 452px;
   margin: 56px 0 0 16px;
@@ -752,7 +767,7 @@ img-hero {
   justify-content: flex-end;
 }
 
-.about-sec{
+.about-sec {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
